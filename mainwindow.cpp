@@ -103,22 +103,22 @@ void MainWindow::raycast()
             float t=-10000;
 
 
-            if(ball.getIntersection(pixel_ray,&intersect))
-            {
-                t=intersect.t;
-                nor=intersect.nor;
-            }
+//            if(ball.getIntersection(pixel_ray,&intersect))
+//            {
+//                t=intersect.t;
+//                nor=intersect.nor;
+//            }
 
-            //re-init rays
-            pixel_ray.origin=cam.eye_pos;
-            //Shoot Rays
-            pixel_ray.dir=glm::normalize(glm::vec3( (i - width/2)/width, (j-height/2)/height,-1));
+//            //re-init rays
+//            pixel_ray.origin=cam.eye_pos;
+//            //Shoot Rays
+//            pixel_ray.dir=glm::normalize(glm::vec3( (i - width/2)/width, (j-height/2)/height,-1));
 
-            if(ball2.getIntersection(pixel_ray,&intersect))
-            {
-                t=intersect.t;
-                nor=intersect.nor;
-            }
+//            if(ball2.getIntersection(pixel_ray,&intersect))
+//            {
+//                t=intersect.t;
+//                nor=intersect.nor;
+//            }
 
 
             //re-init rays
